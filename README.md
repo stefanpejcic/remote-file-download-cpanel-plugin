@@ -23,7 +23,7 @@ Useful for shared web hosting servers where SSH and Git access is disabled for s
 
 Because this is a free plugin, support is restricted to maintaining the source code and ensuring that the plugin functions on latest cPanel version.
 
-Please see the additional services area below if you require assistance outside of this scope, such as with plugin installation, branding, or integrating it with your custom template.
+Contact me if you require assistance with plugin installation, branding, or integrating it with your custom template.
 
 ### Contribute
 
