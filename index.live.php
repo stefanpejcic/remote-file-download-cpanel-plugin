@@ -73,7 +73,7 @@ input[type="submit"] {
 
     </form>
 
-<p> If the file already exists, the copy fill be saved as filename.1</p>
+<p style="position: absolute; bottom: 10vh;">NOTE: If the file already exists, the copy fill be saved as filename.1</p>
 
 <?php
 echo $cpanel->footer();
