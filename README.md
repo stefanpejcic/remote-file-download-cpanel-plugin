@@ -5,6 +5,12 @@ Remote file download cPanel plugin allows users to download remote files from gi
 Useful for shared web hosting servers where SSH nad Git access is disabled for security.
 
 
+### Features
+
+- simple link upload form
+- saves file to users home directory
+- saves duplicates as filename.1 filename.2 etc.
+
 ### How to install the plugin
 
 1. `wget https://github.com/stefanpejcic/remote-file-download-cpanel-plugin/archive/main.zip`
