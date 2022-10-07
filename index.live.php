@@ -23,14 +23,9 @@ if(file_exists("/usr/local/cpanel/base/frontend/paper_lantern/remote-file-downlo
 }
 
     $BASE_URL = strtok($_SERVER['REQUEST_URI'],'?');
-
-    if (isset($_POST['url'])){
-        $url = $_POST['url'];
-        echo "Transferring file: {$url} to {$path}<br>";
-        exec("cd $path && wget {$url}");
-    }
 ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" crossorigin="anonymous">
+
 <div class="container" style="width: auto">
         <div v-model=""></div>
         <div class="content">
@@ -43,16 +38,31 @@ if(file_exists("/usr/local/cpanel/base/frontend/paper_lantern/remote-file-downlo
  </ul>
                 </div>
             </nav>
+
+<?php
+    if (isset($_POST['url'])){
+        $url = $_POST['url'];
+        echo "Transferring file: {$url} to {$path}<br>";
+        exec("cd $path && wget {$url}");
+    }
+?>
+
+
+
 <style>
+div.body-content {
+    min-height: 50vh;
+    height: 80vh;
+    }
 input[type="submit"] {
     display: none;
-}
+    }
 .custom-submit {
     border: 1px solid #ccc;
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
-}
+    }
 </style>
     <form name='upload' method='post' action="<?php echo $BASE_URL; ?>">
         <input type='text' id='url' name='url' size='128' />
