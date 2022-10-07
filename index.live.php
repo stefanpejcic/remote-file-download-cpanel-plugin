@@ -30,7 +30,7 @@ if(file_exists("/usr/local/cpanel/base/frontend/paper_lantern/remote-file-downlo
         exec("cd $path && wget {$url}");
     }
 ?>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" crossorigin="anonymous">
 <div class="container" style="width: auto">
         <div v-model=""></div>
         <div class="content">
@@ -43,11 +43,24 @@ if(file_exists("/usr/local/cpanel/base/frontend/paper_lantern/remote-file-downlo
  </ul>
                 </div>
             </nav>
-
-
+<style>
+input[type="submit"] {
+    display: none;
+}
+.custom-submit {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+</style>
     <form name='upload' method='post' action="<?php echo $BASE_URL; ?>">
         <input type='text' id='url' name='url' size='128' />
-        <input type="submit" value="Upload">
+<label for="file-upload" class="custom-submit">
+    <i class="fa fa-cloud-download"></i> Download</label> 
+        
+ <input id="file-upload" type="submit" value="Upload">     
+
     </form>
 
 <p> If the file already exists, the copy fill be saved as filename.1</p>
