@@ -27,4 +27,4 @@ Please see the additional services area below if you require assistance outside 
 
 ### Contribute
 
-You can support me by giving [a GitHub star ★](https://github.com/stefanpejcic/lastlogin-cpanel-plugin/stargazers) and spread the word :)
+You can support me by giving [a GitHub star ★](https://github.com/stefanpejcic/remote-file-download-cpanel-plugin/stargazers) and spread the word :)
