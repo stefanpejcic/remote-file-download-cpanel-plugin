@@ -1,5 +1,3 @@
-# remote-file-download-cpanel-plugin
-
 Remote file download cPanel plugin allows users to download remote files from github or any other server, directly to their root directory.
 
 Useful for shared web hosting servers where SSH nad Git access is disabled for security.
